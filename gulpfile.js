@@ -7,7 +7,7 @@ const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 
-const scss_src = './app/scss/main.scss';
+const scss_src = './app/scss/*.scss';
 const scss_dist = './dist/css/';
 const js_src = './app/js/app.js';
 const js_dist = './dist/js/';
