@@ -14,9 +14,6 @@ let total;
 let allInputs = [bill, customTip, numOfPeople];
 
 
-
-
-
 // CALCULATES THE RESULTS BASED ON THE SELECTED BUTTON VALUE
 const getTip = () => {
     tips.forEach((btns) => {
@@ -92,7 +89,7 @@ const resetValues = resetButton => {
 
 
 
-// OTHERS FUNCTIONS
+//RUN FUNCTIONS
 setInterval(getTip, 100);
 setInterval(runGetCustom, 100);
 setInterval(enableResetButton, 100);
