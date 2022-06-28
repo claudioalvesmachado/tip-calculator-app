@@ -28,7 +28,7 @@ main {
         font-size: 11px;
         text-align: center;
         background-color: $clr-neutral;
-                width: 40rem;
+        width: 40rem;
 
         @include breakpoint(medium-up) {
             margin-top: 6.4rem;
