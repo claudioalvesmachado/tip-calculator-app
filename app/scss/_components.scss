@@ -1,0 +1,109 @@
+@import "./base";
+
+// Inputs global styles
+input,
+button {
+    font-size: $fs-input;
+    font-family: $ff-body;
+    border-radius: $radius-button;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+// Buttons and custom input styles
+.inputs__tips {
+    .btn,
+    #custom {
+        background-color: $clr-primary--dark;
+        color: $clr-bg--input;
+        width: 100%;
+        max-width: 15.6rem;
+
+        &::placeholder {
+            color: $clr-person;
+            text-align: center;
+        }
+    }
+}
+
+// Inputs default styles including  custom input
+input,
+#custom {
+    background-color: $clr-bg--input !important;
+    color: $clr-primary--dark !important;
+    text-align: right !important;
+    padding-right: 1.6rem;
+    cursor: auto;
+}
+
+// Bill and N° of People input styles
+.inputs {
+    &__bill,
+    &__nofp {
+        .label {
+            margin-bottom: .4rem;
+        }
+
+        #bill {
+            background-image: url("../../assets/img/icon-dollar.svg");
+        }
+
+        #nofp {
+            background-image: url("../../assets/img/icon-person.svg");
+        }
+
+        input {
+            background-repeat: no-repeat;
+            background-position: 1.6rem center;
+            background-size: 1.2rem;
+            width: 100%;
+
+            &::placeholder {
+                color: $clr-person;
+            }
+        }
+    }
+}
+
+// Reset Button
+.reset {
+    .btn {
+        background-color: $clr-primary;
+        color: $clr-primary--dark;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .is-disable {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+}
+
+// Hover and focus effects
+
+input:focus {
+    outline: 0.2rem solid $clr-primary;
+}
+
+.btn:hover {
+    background-color: $clr-bg--main;
+    color: $clr-primary--dark;
+    opacity: 1; // For RESET button
+}
+
+.btn:focus-within:not(.btn--reset) {
+    background-color: $clr-primary;
+    color: $clr-primary--dark;
+}
+
+// Hides arrows from inputs number ///
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+//  //  //  //  //  //  //  //  //  //

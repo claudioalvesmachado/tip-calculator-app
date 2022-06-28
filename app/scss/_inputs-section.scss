@@ -1,0 +1,57 @@
+@import "./base";
+@import "./breakpoints";
+
+.inputs {
+    &__tips {
+        margin: 3rem 0;
+        @include breakpoint(medium-up) {
+            max-height: 15.4rem;
+        }
+
+        .label {
+            margin: 1.6rem 0;
+        }
+
+        .tips-wrapper {
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.6rem;
+
+            @include breakpoint(medium-up) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+
+    &__nofp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0.8rem;
+
+        &:last-child {
+            flex-wrap: wrap;
+        }
+        .error {
+            display: none;
+        }
+        
+        &--error {
+            input {
+                outline: hsl(0, 100%, 70%) .2rem solid !important;
+            }
+
+            .error {
+                display: block;
+                color: hsl(0, 100%, 70%);
+                font-size: $fs-body;
+                
+                @include breakpoint(medium-up) {
+                    font-size: $fs-span;
+                }
+            }
+        }
+    }
+
+}

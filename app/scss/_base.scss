@@ -1,0 +1,43 @@
+// RESET CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+// COLORS
+$clr-primary: hsl(172, 67%, 45%);
+$clr-primary--dark: hsl(183, 100%, 15%);
+$clr-label: hsl(186, 14%, 43%);
+$clr-person: hsl(181, 24%, 43%);
+$clr-bg--input: hsl(189, 41%, 97%);
+$clr-bg--main: hsl(185, 41%, 84%);
+$clr-neutral: hsl(0, 0%, 100%);
+
+// TYPOGRAPHY
+$ff-body: "Space Mono", serif;
+
+$fw-body: 700;
+
+$fs-body: 1.2rem;
+$fs-span: 1.6rem;
+$fs-input: 2.4rem;
+$fs-result: 4rem;
+
+// BORDER RADIUS
+
+$radius-normal: 1.6rem;
+$radius-button: .8rem;
+

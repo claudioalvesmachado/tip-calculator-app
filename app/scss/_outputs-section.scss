@@ -1,0 +1,46 @@
+@import './base';
+@import './breakpoints';
+
+
+.outputs {
+    font-size: $fs-span;
+    background-color: $clr-primary--dark;
+    color: $clr-neutral;
+    border-radius: $radius-normal;
+    padding: 2.8rem 2.4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 3.2rem;
+    
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .4rem;
+
+        .person {
+            display: block;
+            color: $clr-label;
+            font-size: $fs-body;
+        }
+
+        .res {
+            font-size: $fs-result;
+            color: $clr-primary;;
+        }
+
+        @include breakpoint(medium-up) {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    @include breakpoint(medium-up) {
+        min-height: 41.6rem;
+        padding: 3.2rem;
+    }
+
+} 

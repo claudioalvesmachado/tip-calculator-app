@@ -1,0 +1,67 @@
+@import "./base";
+@import "./breakpoints";
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    font-size: $fs-body;
+    font-family: $ff-body;
+    background-color: $clr-bg--main;
+    color: $clr-label;
+
+    @include breakpoint(medium-up) {
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 4rem auto;
+
+        @include breakpoint(medium-up) {
+            margin: 0 auto 8rem;
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        background-color: $clr-neutral;
+                width: 40rem;
+
+        @include breakpoint(medium-up) {
+            margin-top: 6.4rem;
+            background-color: initial;
+        }
+
+        & a {
+            color: $clr-primary--dark;
+            text-decoration: none;
+            &:hover {
+                color: $clr-primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.container {
+    background-color: $clr-neutral;
+    width: min(100%, 40rem);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border-radius: $radius-normal $radius-normal 0 0;
+    padding: 2.4rem;
+    gap: 4.8rem;
+
+    @include breakpoint(medium-up) {
+        padding: 3.2rem 3.2rem 3.2rem 4.8rem;
+        grid-template-columns: 38rem 41.2rem;
+        grid-template-rows: 1fr;
+        width: min(100%, 92rem);
+        border-radius: $radius-normal;
+    }
+}

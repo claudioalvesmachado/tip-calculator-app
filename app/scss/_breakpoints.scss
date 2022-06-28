@@ -1,0 +1,8 @@
+
+@mixin breakpoint($size) {
+	@if $size == medium-up {
+        @media (min-width: 61.5rem) {
+            @content;
+        }
+    }
+}
