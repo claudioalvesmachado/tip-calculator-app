@@ -48,6 +48,7 @@ main {
 
 .container {
     background-color: $clr-neutral;
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
     width: min(100%, 40rem);
     display: grid;
     grid-template-rows: 1fr auto;
